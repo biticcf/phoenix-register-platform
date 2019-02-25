@@ -1,0 +1,31 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>dir</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+			<!--
+            <excludes>
+                <exclude>org.springframework:spring</exclude>
+            </excludes>
+			-->
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputDirectory>lib</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+    <fileSets>
+        <fileSet>
+            <filtered>true</filtered>
+            <directory>src/main/resources</directory>
+            <outputDirectory>/classes</outputDirectory>
+        </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>src/main/bin/single.sh</source>
+            <outputDirectory>/bin</outputDirectory>
+        </file>
+    </files>
+</assembly>

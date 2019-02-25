@@ -1,0 +1,13 @@
+cougar-platform
+
+cd ./
+
+导入eclipse方式：
+1.导入本地meaven仓库：
+1.1 mvn clean install -Denv=dev -DskipTests=true
+
+2.导入Eclipse：
+2.1 mvn clean -Denv=dev -DskipTests=true
+2.2 mvn eclipse:clean -Denv=dev -DskipTests=true
+2.3 mvn eclipse:eclipse -Denv=dev -DskipTests=true
+
